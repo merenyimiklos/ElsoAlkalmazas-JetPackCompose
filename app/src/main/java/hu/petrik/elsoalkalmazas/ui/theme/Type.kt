@@ -6,29 +6,40 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-// Set of Material typography styles to start with
+/*
+ * Az alkalmazás szövegstílusai.
+ *
+ * Első órán elég annyit tudni róla, hogy itt állíthatjuk be
+ * a szövegek alapértelmezett betűtípusát, méretét és vastagságát.
+ */
 val Typography = Typography(
+    // A bodyLarge az egyik általánosan használt törzsszöveg-stílus.
     bodyLarge = TextStyle(
+        // A rendszer alapértelmezett betűtípusát használjuk.
         fontFamily = FontFamily.Default,
+
+        // Normál betűvastagság.
         fontWeight = FontWeight.Normal,
+
+        // A betűméret 16 sp.
+        // Szövegnél általában sp mértékegységet használunk.
         fontSize = 16.sp,
+
+        // A sorok közötti magasság.
         lineHeight = 24.sp,
+
+        // A karakterek közötti távolság.
         letterSpacing = 0.5.sp
     )
-    /* Other default text styles to override
-    titleLarge = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 22.sp,
-        lineHeight = 28.sp,
-        letterSpacing = 0.sp
-    ),
-    labelSmall = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Medium,
-        fontSize = 11.sp,
-        lineHeight = 16.sp,
-        letterSpacing = 0.5.sp
-    )
-    */
+
+    /*
+     * Ugyanitt további stílusokat is megadhatnánk, például:
+     *
+     * titleLarge = TextStyle(
+     *     fontSize = 22.sp
+     * ),
+     * labelSmall = TextStyle(
+     *     fontSize = 11.sp
+     * )
+     */
 )
